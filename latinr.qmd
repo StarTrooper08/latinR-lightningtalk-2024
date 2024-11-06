@@ -1,0 +1,131 @@
+---
+format:
+  revealjs:
+    width: 1290
+    height: 720
+    progress: true
+    incremental: true
+    logo: logo.png
+    footer: "[Atharva]"
+---
+
+
+##  {.center}
+
+:::: {.rows}
+
+::: {.row}
+![](logo.png)
+:::
+
+
+::: r-fit-text
+**Making Code Contributions Seamless**
+:::
+
+::: {.row}
+with **R Dev Container**
+:::
+
+::: {.dateplace}
+18th November 2024 @ LatinR 2024
+:::
+
+
+
+::::
+
+
+
+## Little Bit About me 
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+::: {.nonincremental}
+
+
+- 👋 Hi Everyone, I'm **Atharva Shirdhankar** a **Backend and DevOps enthusiast**, with a passion for **seamless systems** and tech **tinkering** with **Raspberry Pi**!
+
+- 💻 2x **Google Summer of Code Mentee 2023 and 2024**
+
+- 📈 2x **Devto Hackathon Runner-Up** (Github Actions 2021, Azure Trail 2022)
+
+:::
+:::
+
+::: {.column width="30%"}
+![](selfintro.gif)
+:::
+
+::::
+
+
+
+
+## About the R Dev Container Project
+
+- Development Environment Platform for R, built with Linux, Bash, and Docker, designed for seamless integration with GitHub Codespaces and Gitpod.
+
+<img width="48" height="48" src="https://img.icons8.com/color/48/linux--v1.png" alt="linux--v1"/>
+<img width="48" height="48" src="https://img.icons8.com/color/48/bash.png" alt="bash"/>
+<img width="48" height="48" src="https://img.icons8.com/doodle/48/docker.png" alt="docker"/>
+
+- Main Goal of the Project to setup R Development Environment 
+
+
+
+
+## Its Features {.center}
+
+
+:::: {.columns}
+
+::: {.column width=33%}
+
+
+::: {.fragment .fade-left}
+**Multiple R Builds**
+
+<img width="100" height="100" src="https://img.icons8.com/external-soft-fill-juicy-fish/100/external-multiple-project-management-soft-fill-soft-fill-juicy-fish.png" alt="external-multiple-project-management-soft-fill-soft-fill-juicy-fish"/>
+:::
+
+:::
+
+::: {.column width=33%}
+
+::: {.fragment .fade-left}
+**Switch R Versions**
+<img width="100" height="100" src="https://img.icons8.com/external-others-lafs/100/external-control-iiot-outline-colored-iconset-others-lafs.png" alt="external-control-iiot-outline-colored-iconset-others-lafs"/>
+:::
+
+:::
+
+::: {.column width=33%}
+
+::: {.fragment .fade-left}
+**Work in Teams**
+
+<img width="100" height="100" src="https://img.icons8.com/external-soft-fill-juicy-fish/100/external-teamwork-business-process-soft-fill-soft-fill-juicy-fish.png" alt="external-teamwork-business-process-soft-fill-soft-fill-juicy-fish"/>
+:::
+
+:::
+::::
+
+
+
+
+
+
+## Project Demo
+
+## Thanks to Contributors
+
+https://github.com/LatinR/web-LatinR2024/blob/main/img/logo.png
+
+https://svn.r-project.org/R/trunk/
+
+https://bugs.r-project.org/show_bug.cgi?id=16817
+
+https://quarto.org/docs/presentations/revealjs/
