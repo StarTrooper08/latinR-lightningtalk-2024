@@ -139,8 +139,6 @@ R Contribution Workflow
 
 - To build R we can just follow easy steps mentioned in [R Dev Container Building R Docs](https://contributor.r-project.org/r-dev-env/tutorials/building_r/){preview-link="true"}.
 
-- Source Code will be kept in $TOP_SRCDIR/r-devel and Build R for the respective version will be kept in $BUILDDIR/r-devel.
-
 ## {}
 
 **Bug Report Statement**
