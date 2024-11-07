@@ -10,7 +10,7 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.552">
 
-  <title>index</title>
+  <title>Latin R 2024</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -349,9 +414,9 @@
 <div>
 <ul>
 <li><p>👋 Hi Everyone, I’m <strong>Atharva Shirdhankar</strong> a <strong>Backend and DevOps enthusiast</strong>, with a passion for <strong>seamless systems</strong> and tech <strong>tinkering</strong> with <strong>Raspberry Pi</strong>!</p></li>
-<li><p>💻 2x <strong>Google Summer of Code Mentee 2023 and 2024</strong></p></li>
+<li><p>💻 2x <strong>Google Summer of Code Mentee 2023 and 2024 <span class="citation" data-cites="R">@R</span> project for statistical computing</strong></p></li>
 <li><p>📈 2x <strong>Devto Hackathon Runner-Up</strong> (Github Actions 2021, Azure Trail 2022)</p></li>
-<li><p>🔗 Lets Connect : <a href="https://www.linkedin.com/in/atharvashirdhankar/"><strong>Linkedin</strong></a> <strong>|</strong> <a href="https://github.com/StarTrooper08"><strong>Github</strong></a></p></li>
+<li><p>🔗 Lets Connect : <a href="https://www.linkedin.com/in/atharvashirdhankar/">Linkedin/<strong><span class="citation" data-cites="atharvashirdhankar">@atharvashirdhankar</span></strong></a> <a href="https://github.com/StarTrooper08">Github/<strong><span class="citation" data-cites="StarTrooper08">@StarTrooper08</span></strong></a></p></li>
 </ul>
 </div>
 </div><div class="column" style="width:30%;">
@@ -361,16 +426,126 @@
 </section>
 <section id="about-the-r-dev-container-project" class="slide level2">
 <h2>About the R Dev Container Project</h2>
+<div>
 <ul>
-<li class="fragment">Development Environment Platform for R, built with Linux, Bash, and Docker, designed for seamless integration with GitHub Codespaces and Gitpod.</li>
+<li><strong>Tech Stack</strong>: R Dev Container is built with Linux, Bash, and Docker, designed for seamless integration with GitHub Codespaces and Gitpod.</li>
 </ul>
+<div style="text-align: center; margin-top: 0.2em">
 <p><img src="https://img.icons8.com/color/48/linux--v1.png" alt="linux--v1" width="48" height="48"> <img src="https://img.icons8.com/color/48/bash.png" alt="bash" width="48" height="48"> <img src="https://img.icons8.com/doodle/48/docker.png" alt="docker" width="48" height="48"></p>
+</div>
 <ul>
-<li class="fragment">Main Goal of the Project to setup R Development Environment</li>
+<li><p><strong>Goal</strong>: Enable a quick, seamless setup of the R development environment, allowing contributors to start coding with just a few clicks.</p></li>
+<li><p><strong>Benefit</strong>: Lowers the entry barrier for new contributors, reducing setup friction and making it easier to contribute to the R project.</p></li>
+</ul>
+</div>
+</section>
+<section id="r-dev-container-quick-setup" class="slide level2 scrollable">
+<h2>R Dev Container Quick Setup</h2>
+<ul>
+<li><p>Visit the R Dev Container <a href="https://github.com/r-devel/r-dev-env" data-preview-link="true">https://github.com/r-devel/r-dev-env</a>.</p></li>
+<li><p>Click on Code button and change the tab to Codespaces <img data-src="resources/ss1.png" width="750" height="400"></p></li>
+<li><p>After that Click on “Create Codespace on main”<img data-src="resources/ss2.png" width="900" height="500"></p></li>
+<li><p>You can also run R program. To do so, you need to click on R: not attached option in status bar(botton right). This will open up a R interactive console.</p>
+<p><img data-src="resources/ss3.png" width="400" height="300"></p></li>
+<li><p>Just create a R file and run it using the run button on the top beside file tabs.</p>
+<p><img data-src="resources/ss4.png" width="750" height="400"></p></li>
 </ul>
 </section>
-<section id="its-features" class="slide level2 center">
-<h2>Its Features</h2>
+<section id="section-1" class="slide level2 center" data-background-video="projectdemo.mp4" data-background-video-loop="true" data-background-video-muted="true" data-background-opacity="0.2">
+<h2></h2>
+<div class="r-fit-text">
+<p>R Contribution Workflow</p>
+</div>
+</section>
+<section id="find-a-bug-report-on-bugzilla" class="slide level2 center">
+<h2>Find a Bug Report on Bugzilla</h2>
+<ul>
+<li><p><a href="https://bugs.r-project.org/buglist.cgi?bug_status=__open__">R Bugzilla</a> - Open bug report list</p>
+<p><img data-src="resources/ss8.png" width="550" height="300"></p></li>
+<li><p>Example Bug Report - <a href="https://bugs.r-project.org/show_bug.cgi?id=18810">18810</a>. Potential Solution to this issue is also mentioned by Jeroen Ooms in the discussion.</p></li>
+</ul>
+</section>
+<section id="building-r" class="slide level2 center">
+<h2>Building R</h2>
+<ul>
+<li><p>To build R we can just follow easy steps mentioned in <a href="https://contributor.r-project.org/r-dev-env/tutorials/building_r/" data-preview-link="true">R Dev Container Building R Docs</a>.</p></li>
+<li><p>Source Code will be kept in $TOP_SRCDIR/r-devel and Build R for the respective version will be kept in $BUILDDIR/r-devel.</p></li>
+</ul>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><strong>Bug Report Statement</strong></p>
+<ul>
+<li>readRDS errors do not indicate the filename or connection source, leading to generic “error reading from connection” messages.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">install.packages</span>(<span class="st">'MASS'</span>)</span>
+<span id="cb1-2"><a href=""></a>rdsfile <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">'Meta/links.rds'</span>, <span class="at">package =</span> <span class="st">'MASS'</span>)</span>
+<span id="cb1-3"><a href=""></a><span class="fu">unlink</span>(rdsfile)</span>
+<span id="cb1-4"><a href=""></a><span class="fu">file.create</span>(rdsfile) <span class="co">#create corrupted file</span></span>
+<span id="cb1-5"><a href=""></a>tools<span class="sc">::</span><span class="fu">findHTMLlinks</span>() <span class="co">#errors without clues</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output with Error msg</p>
+<div class="sourceCode" id="cb2" data-code-line-numbers="8"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href=""></a>** testing if installed package can be loaded from final location</span>
+<span id="cb2-2"><a href=""></a>** testing if installed package keeps a record of temporary installation path</span>
+<span id="cb2-3"><a href=""></a>* DONE (MASS)</span>
+<span id="cb2-4"><a href=""></a></span>
+<span id="cb2-5"><a href=""></a>The downloaded source packages are in</span>
+<span id="cb2-6"><a href=""></a>        ‘/tmp/RtmpMuQ5kv/downloaded_packages’</span>
+<span id="cb2-7"><a href=""></a>[1] TRUE</span>
+<span id="cb2-8"><a href=""></a>Error in readRDS(f) : error reading from connection</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="code-contribution" class="slide level2">
+<h2>Code Contribution</h2>
+<ul>
+<li>Updating <code>readRDS()</code> function in <code>src/library/base/R/serialize.R</code> file.</li>
+</ul>
+<div class="sourceCode" id="cb3" data-code-line-numbers="|5|7-9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a></span>
+<span id="cb3-2"><a href=""></a>    <span class="er">}</span> <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">inherits</span>(file, <span class="st">"connection"</span>))</span>
+<span id="cb3-3"><a href=""></a>    con <span class="ot">&lt;-</span> <span class="cf">if</span>(<span class="fu">inherits</span>(file, <span class="st">"url"</span>)) <span class="fu">gzcon</span>(file) <span class="cf">else</span> file</span>
+<span id="cb3-4"><a href=""></a>    <span class="cf">else</span> <span class="fu">stop</span>(<span class="st">"bad 'file' argument"</span>)</span>
+<span id="cb3-5"><a href=""></a>    <span class="fu">.Internal</span>(<span class="fu">unserializeFromConn</span>(con, refhook))</span>
+<span id="cb3-6"><a href=""></a>    </span>
+<span id="cb3-7"><a href=""></a>    <span class="fu">tryCatch</span>(<span class="fu">.Internal</span>(<span class="fu">unserializeFromConn</span>(con, refhook)), <span class="at">error =</span> <span class="cf">function</span>(err){</span>
+<span id="cb3-8"><a href=""></a>        err<span class="sc">$</span>message <span class="ot">&lt;-</span> <span class="fu">paste</span>(err<span class="sc">$</span>message, <span class="st">"in"</span>, <span class="fu">summary</span>(con)<span class="sc">$</span>description)</span>
+<span id="cb3-9"><a href=""></a>        <span class="fu">stop</span>(err)</span>
+<span id="cb3-10"><a href=""></a>    })</span>
+<span id="cb3-11"><a href=""></a><span class="er">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="building-r-again-with-new-changes" class="slide level2">
+<h2>Building R again with new Changes</h2>
+<ul>
+<li>After we have made relevant changes we can just use the following commands to build R again with latest changes.</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="bu">cd</span> <span class="va">$BUILDDIR</span></span>
+<span id="cb4-2"><a href=""></a><span class="fu">make</span></span>
+<span id="cb4-3"><a href=""></a><span class="fu">make</span> check</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Error msg after making relevant changes</li>
+</ul>
+<div class="sourceCode" id="cb5" data-code-line-numbers="9"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href=""></a>* DONE (MASS)</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a>The downloaded source packages are in</span>
+<span id="cb5-4"><a href=""></a>        ‘/tmp/RtmpsOVPcD/downloaded_packages’</span>
+<span id="cb5-5"><a href=""></a>Updating HTML index of packages in '.Library'</span>
+<span id="cb5-6"><a href=""></a>Making 'packages.html' ... done</span>
+<span id="cb5-7"><a href=""></a>[1] TRUE</span>
+<span id="cb5-8"><a href=""></a>Error in doTryCatch(return(expr), name, parentenv, handler) : </span>
+<span id="cb5-9"><a href=""></a>  error reading from connection in /workspace/r-dev-env/build/r-raw/library/MASS/Meta/links.rds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="patch-file" class="slide level2">
+<h2>Patch file</h2>
+<ul>
+<li>create a patch file for the code changes made. The following command will save the changes made in source code in $PATCHDIR directory.</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="bu">cd</span> <span class="va">$TOP_SRCDIR</span></span>
+<span id="cb6-2"><a href=""></a><span class="fu">svn</span> diff <span class="op">&gt;</span> <span class="va">$PATCHDIR</span>/patch.diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img data-src="resources/ss5.png" width="700" height="400"></p>
+</section>
+<section id="submit-patch-file" class="slide level2">
+<h2>Submit Patch File</h2>
+<p><img data-src="resources/ss9.png" width="900" height="500"></p>
+</section>
+<section id="its-features" class="slide level2 center" style="text-align: center; margin-top: 0.2em">
+<h2>Its Features!!</h2>
 <div class="columns">
 <div class="column" style="width:33%;">
 <div class="fragment fade-left">
@@ -389,15 +564,55 @@
 </div>
 </div>
 </section>
-<section id="project-demo" class="slide level2">
-<h2>Project Demo</h2>
+<section id="multiple-r" class="slide level2">
+<h2>Multiple R</h2>
+<ul>
+<li><p>To build multiple R version we need to create new env directory variable.</p></li>
+<li><p>We have <code>set_build_r</code> helper script to create and toggle between different env directory variable.</p></li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href=""></a><span class="ex">gitpod</span> /workspace/r-dev-env $ set_build_r r-raw</span>
+<span id="cb7-2"><a href=""></a><span class="ex">BUILDDIR</span> is now set to /workspace/r-dev-env/build/r-raw</span>
+<span id="cb7-3"><a href=""></a><span class="ex">TOP_SRCDIR</span> is now set to /workspace/r-dev-env/svn/r-raw</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>After this you can follow the same steps to build R. This will build R in $BUILDDIR/r-raw and checkout R source code in $TOP_SRCDIR/r-raw instead of $BUILDDIR/r-devel &amp; $TOP_SRCDIR/r-devel</p></li>
+<li><p>You can also build specific version of R just by svn checkout.</p></li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href=""></a><span class="fu">svn</span> checkout https://svn.r-project.org/R/tags/R-4-3-1 <span class="va">$TOP_SRCDIR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="switch-r-version" class="slide level2">
+<h2>Switch R version</h2>
+<ul>
+<li>We can also switch between different R version we have builded in R Dev Container.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href=""></a><span class="ex">gitpod</span> /workspace/r-dev-env $ which_r</span>
+<span id="cb9-2"><a href=""></a><span class="ex">Which</span> version of R should be used in new R terminals<span class="pp">?</span></span>
+<span id="cb9-3"><a href=""></a>  <span class="ex">1.</span> R 4.4.1 <span class="er">(</span><span class="ex">release</span> version built into this container<span class="kw">)</span></span>
+<span id="cb9-4"><a href=""></a>  <span class="ex">2.</span> r-devel</span>
+<span id="cb9-5"><a href=""></a>  <span class="ex">3.</span> r-raw</span>
+<span id="cb9-6"><a href=""></a><span class="ex">Enter</span> the number corresponding to the selected version: 3</span>
+<span id="cb9-7"><a href=""></a><span class="ex">R</span> terminal will now use version: /workspace/r-dev-env/build/r-raw/bin/R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="work-in-teams" class="slide level2">
+<h2>Work in Teams</h2>
+<ul>
+<li>Leverage VSCode Live Extension. <img data-src="resources/ss7.png" width="900" height="500"></li>
+</ul>
 </section>
 <section id="special-mentions" class="slide level2">
 <h2>Special Mentions</h2>
-<p>https://github.com/LatinR/web-LatinR2024/blob/main/img/logo.png</p>
-<p>https://svn.r-project.org/R/trunk/</p>
-<p>https://bugs.r-project.org/show_bug.cgi?id=16817</p>
-<p>https://quarto.org/docs/presentations/revealjs/</p>
+<div>
+<ul>
+<li><p>R Dev Container project Mentors : <strong>Heather Turner, James Tripp, Iain Emsley</strong></p></li>
+<li><p>A <a href="https://www.dicook.org/posts/2024-07-14-r-devel/" data-preview-link="true">Blogpost</a> on Fixing R graphics issues during R Dev Day Austria(July 2024) using R Dev Container - by <strong>Di Cook</strong> .</p></li>
+<li><p>Some amazing contributors who helped us bring this project all together by contributing to docs, giving feedback and helping out in finding solutions <strong>Elio Campitelli, Lorena Abad Crespo, Robert (Bob) Turner and Dan Brady</strong></p></li>
+</ul>
+</div>
+</section>
+<section id="resources" class="slide level2 center">
+<h2>Resources</h2>
+<p><strong>R Dev Container Repo</strong> : <a href="https://github.com/r-devel/r-dev-env">https://github.com/r-devel/r-dev-env</a></p>
+<p><strong>R Dev Container Docs</strong> : <a href="https://contributor.r-project.org/r-dev-env/">https://contributor.r-project.org/r-dev-env/</a></p>
+<p><strong>R Slack Channel</strong> : <a href="https://r-contributors.slack.com/">https://r-contributors.slack.com/</a></p>
 <div class="quarto-auto-generated-content">
 <p><img src="logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -430,7 +645,7 @@
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
