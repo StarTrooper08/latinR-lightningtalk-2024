@@ -133,7 +133,7 @@ R Contribution Workflow
 - [R Bugzilla](https://bugs.r-project.org/buglist.cgi?bug_status=__open__) - Open bug report list
 
   ![](resources/ss8.png){width="550" height="300"}
-- Example Bug Report - [18810](https://bugs.r-project.org/show_bug.cgi?id=18810). Potential Solution to this issue is also mentioned by Jeroen Ooms in the discussion.
+- Example Bug - [18810](https://bugs.r-project.org/show_bug.cgi?id=18810) "Improve error for readRDS by including filename". Potential Solution to this issue is also mentioned by Jeroen Ooms in the discussion.
 
 ## Building R{.center}
 
