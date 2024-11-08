@@ -201,7 +201,7 @@ Updating HTML index of packages in '.Library'
 Making 'packages.html' ... done
 [1] TRUE
 Error in doTryCatch(return(expr), name, parentenv, handler) : 
-  error reading from connection in /workspace/r-dev-env/build/r-raw/library/MASS/Meta/links.rds
+  error reading from connection in /workspace/r-dev-env/build/r-rdevel/library/MASS/Meta/links.rds
 ```
 
 
@@ -222,71 +222,6 @@ svn diff > $PATCHDIR/patch.diff
 
 ![](resources/ss9.png){width="900" height="500"}
 
-
-## Its Features!!{.center style="text-align: center; margin-top: 0.2em"}
-
-::: columns
-::: {.column width="33%"}
-::: {.fragment .fade-left}
-**Multiple R Builds**
-
-<img src="https://img.icons8.com/external-soft-fill-juicy-fish/100/external-multiple-project-management-soft-fill-soft-fill-juicy-fish.png" alt="external-multiple-project-management-soft-fill-soft-fill-juicy-fish" width="100" height="100"/>
-:::
-:::
-
-::: {.column width="33%"}
-::: {.fragment .fade-left}
-**Switch R Versions** <img src="https://img.icons8.com/external-others-lafs/100/external-control-iiot-outline-colored-iconset-others-lafs.png" alt="external-control-iiot-outline-colored-iconset-others-lafs" width="100" height="100"/>
-:::
-:::
-
-::: {.column width="33%"}
-::: {.fragment .fade-left}
-**Work in Teams**
-
-<img src="https://img.icons8.com/external-soft-fill-juicy-fish/100/external-teamwork-business-process-soft-fill-soft-fill-juicy-fish.png" alt="external-teamwork-business-process-soft-fill-soft-fill-juicy-fish" width="100" height="100"/>
-:::
-:::
-:::
-
-
-## Multiple R
-
-- To build multiple R version we need to create new env directory variable.
-
-- We have `set_build_r` helper script to create and toggle between different env directory variable.
-
-```bash
-gitpod /workspace/r-dev-env $ set_build_r r-raw
-BUILDDIR is now set to /workspace/r-dev-env/build/r-raw
-TOP_SRCDIR is now set to /workspace/r-dev-env/svn/r-raw
-```
-
-- After this you can follow the same steps to build R. This will build R in $BUILDDIR/r-raw and checkout R source code in $TOP_SRCDIR/r-raw instead of $BUILDDIR/r-devel & $TOP_SRCDIR/r-devel
-
-- You can also build specific version of R just by svn checkout.
-```bash
-svn checkout https://svn.r-project.org/R/tags/R-4-3-1 $TOP_SRCDIR
-```
-
-## Switch R version
-
-- We can also switch between different R version we have builded in R Dev Container.
-
-```{.bash}
-gitpod /workspace/r-dev-env $ which_r
-Which version of R should be used in new R terminals?
-  1. R 4.4.1 (release version built into this container)
-  2. r-devel
-  3. r-raw
-Enter the number corresponding to the selected version: 3
-R terminal will now use version: /workspace/r-dev-env/build/r-raw/bin/R
-```
-
-## Work in Teams
-
-- Leverage VSCode Live Extension.
-![](resources/ss7.png){width="900" height="500"}
 
 ## Special Mentions
 ::: nonincremental
